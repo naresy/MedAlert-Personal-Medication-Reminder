@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"> <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your task"
+
+        android:layout_marginBottom="20dp"/>
+
+       <TimePicker
+           android:id="@+id/time_set"
+           android:layout_width="242dp"
+           android:layout_height="335dp"
+           android:layout_below="@+id/message"></TimePicker>
+   </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="300dp"
+        android:text="set" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="10dp"
+        android:text="Cancle" />
+
+    </RelativeLayout>
+
